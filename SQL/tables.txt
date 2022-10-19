@@ -1,0 +1,49 @@
+Table
+
+Staff
+StaffID varchar pk
+StaffName 
+StaffGender : varchar(10)
+StaffEmail : varchar(50)
+StaffPhone : integer
+StaffAddress : varchar(100)
+Salary : integer
+
+CustomerInfo
+CustomerID : varchar (20) pk
+CustomerName : varchar(20)
+CustomerGender : varchar (10)
+CustomerEmail : varchar (50)
+CustomerPhone : integer
+CustomerAddress : varchar (100)
+
+Car
+CarID : varchar (20) PK
+CarName : varchar(20) 
+CarPrice : integer
+Stock : integer
+CarBrandID : varchar (20) fk
+
+CarBrand
+CarBrandID : varchar (20) PK
+CarBrandName : varchar (50)
+
+Vendor
+VendorID : varchar (20) PK
+VendorName : varchar (20)
+
+Transaction
+TransactionID : varchar (20) PK
+StaffID : varchar (20)  fk
+CustomerID : varchar (20)fk
+TransactionDate : date
+CarID : varchar (20) fk
+
+Purchase
+PurchaseID : varchar (20) pk
+StaffID : varchar (20) fk
+VendorID : varchar (20) fk
+PurchaseDate : date
+CarID : varchar (20) fk
+Quantity : integer
+
